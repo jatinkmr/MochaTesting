@@ -3,7 +3,13 @@ const sayHello = require('../app').sayHello;
 // const app = require('../app');
 
 describe('App', () => { 
-	it('app Should return Hello', () => { 
-		assert.equal(sayHello(), 'hello');
+	it('sayHello Should return hello', () => { 
+		let result = sayHello();
+		assert.equal(result, 'hello');
+	});
+
+	it('sayHello should return type String', () => { 
+		let result = sayHello();
+		assert.typeOf(result, 'string');
 	});
 });
