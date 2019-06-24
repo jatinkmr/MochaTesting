@@ -7,7 +7,7 @@ sayHelloResult = app.sayHello();
 addNumbersResult = app.addNumbers(5, 6);
 
 describe('App', () => { 
-	describe('sayHello()', () => { 
+	describe('sayHello', () => { 
 		it('sayHello Should return hello', () => { 
 			// let result = app.sayHello();
 			assert.equal(sayHelloResult, 'hello');
